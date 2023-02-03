@@ -17,7 +17,14 @@
 		margin-top: 2rem;
 		text-align: center;
 
+
+		.instagram a {
+			text-decoration: none; !important
+		}
+
 		.copyright {
+			a {
+				text-decoration: none; !important}
 			letter-spacing: _font(letter-spacing);
 			font-size: 0.6rem;
 			opacity: 0.75;

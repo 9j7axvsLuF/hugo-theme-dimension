@@ -18,9 +18,9 @@
                         <div class="inner">
                             <h1>{{ .Title | default "Title" }}</h1>
                             {{ if .Params.description }}
-                            <p>
+                            <h3>
                                 {{ .Params.description }}
-                            </p>
+                            </h3>
                             {{ end }}
                         </div>
                     </div>
@@ -33,7 +33,8 @@
                                             <a href="#{{ cond (in (.Title|urlize) "%") (.Title | base64Encode) (.Title) | urlize }}">{{ .Title }}</a>
                                         </li>
                                     {{ else }}
-                                        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                                        <!-- <li><a href="{{ .Permalink }}">{{ .Title }}</a></li> -->
+                                        <li><a href="https://form.jointhyrsus.com/app/apply">join</a></li>
                                     {{ end }}
                                 {{ end }}
                             {{ end }}
@@ -48,9 +49,11 @@
                         {{if .Title }}
                             {{if .Content }}
                                 <article id="{{ cond (in (.Title|urlize) "%") (.Title | base64Encode) (.Title) | urlize }}">
-                                    <h2 class="major">{{ .Title }}</h2>
-                                    <span class="image main"><img src="{{ .Params.image }}" alt="" /></span>
-                                    {{ .Content }}
+                                    <!-- <h2 class="major">{{ .Title }}</h2> -->
+                                    <!-- <span class="image main"><img src="{{ .Params.image }}" alt="" /></span> -->
+                                    <span class="longlogo"><img src="images/thyrsus_long.png" alt="" /></span>
+                                    <span class="about">{{ .Content }}</span>
+                                    <span class="longlogo"><img src="images/thyrsus_long.png" alt="" /></span>
                                 </article>
                             {{ end }}
                         {{ end }}

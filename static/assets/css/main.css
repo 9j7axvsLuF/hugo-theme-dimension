@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+English:300italic,600italic,300,600");
 
 /*
 	Dimension by HTML5 UP
@@ -112,13 +113,13 @@ input, select, textarea {
 /* Type */
 
 	html {
-		font-size: 16pt;
+		font-size: 20pt;
 	}
 
 		@media screen and (max-width: 1680px) {
 
 			html {
-				font-size: 12pt;
+				font-size: 18pt;
 			}
 
 		}
@@ -126,7 +127,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			html {
-				font-size: 11pt;
+				font-size: 15pt;
 			}
 
 		}
@@ -152,9 +153,12 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
 		text-decoration: none;
 		color: inherit;
+	}
+
+	.about a {
+		color: #88aaed
 	}
 
 	.logo a {
@@ -176,6 +180,10 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2rem 0;
+	}
+
+	h1 {
+		font-family: IM Fell English;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -602,6 +610,25 @@ input, select, textarea {
 			padding: 0;
 		}
 
+/* Long logo */
+
+	.longlogo {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+		
+	}
+
+		.longlogo > img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 40%;
+			margin-bottom:50px;
+
+		}
+
+
 /* Icon */
 
 	.icon {
@@ -716,6 +743,7 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+		
 
 		@media screen and (max-width: 736px) {
 
@@ -1638,6 +1666,7 @@ input, select, textarea {
 
 /* Footer */
 
+
 	#footer {
 		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
@@ -1647,7 +1676,7 @@ input, select, textarea {
 		max-width: 100%;
 		margin-top: 2rem;
 		text-align: center;
-	}
+
 
 		#footer .copyright {
 			letter-spacing: 0.2rem;
